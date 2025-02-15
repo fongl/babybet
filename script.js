@@ -78,6 +78,7 @@ document.getElementById('betForm').addEventListener('submit', function(event) {
   .then(() => {
     alert('Bet placed successfully!');
     document.getElementById('betForm').reset(); 
+    location.reload();
   })
   .catch((error) => {
     console.error('Error:', error);
