@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 600px; /* Limits width for larger screens */
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-bottom: 20px;
+}
+
+.stats-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stats-box {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.stats-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stats-box p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.stats-box strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Bet Form */
+.bet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.bet-form label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bet-form input,
+.bet-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.bet-form button {
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bet-form button:hover {
+  background-color: #ff4d3b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .stats-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .stats-box p {
+    font-size: 0.9rem;
+  }
+
+  .bet-form button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
